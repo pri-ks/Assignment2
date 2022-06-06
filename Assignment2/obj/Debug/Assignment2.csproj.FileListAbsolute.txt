@@ -1,0 +1,8 @@
+C:\College\SEM-May2022\Software_Quality_Assurance\Assignment2\Assignment2\Assignment2\bin\Debug\Assignment2.exe.config
+C:\College\SEM-May2022\Software_Quality_Assurance\Assignment2\Assignment2\Assignment2\bin\Debug\Assignment2.exe
+C:\College\SEM-May2022\Software_Quality_Assurance\Assignment2\Assignment2\Assignment2\bin\Debug\Assignment2.pdb
+C:\College\SEM-May2022\Software_Quality_Assurance\Assignment2\Assignment2\Assignment2\obj\Debug\Assignment2.csproj.AssemblyReference.cache
+C:\College\SEM-May2022\Software_Quality_Assurance\Assignment2\Assignment2\Assignment2\obj\Debug\Assignment2.csproj.SuggestedBindingRedirects.cache
+C:\College\SEM-May2022\Software_Quality_Assurance\Assignment2\Assignment2\Assignment2\obj\Debug\Assignment2.csproj.CoreCompileInputs.cache
+C:\College\SEM-May2022\Software_Quality_Assurance\Assignment2\Assignment2\Assignment2\obj\Debug\Assignment2.exe
+C:\College\SEM-May2022\Software_Quality_Assurance\Assignment2\Assignment2\Assignment2\obj\Debug\Assignment2.pdb
