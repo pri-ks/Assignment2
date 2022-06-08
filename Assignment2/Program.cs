@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Assignment2
 {
@@ -12,7 +8,8 @@ namespace Assignment2
         {
             int length, width;
             Console.WriteLine("Rectangle Operations");
-            Console.Write("Please enter the length of the rectangle: ");
+            Console.Write("\n");
+            Console.Write("Please enter length of the rectangle (cm): ");
             bool isIntLength = int.TryParse(Console.ReadLine(), out length);
             while (isIntLength == false || length < 1)
             {
@@ -20,7 +17,7 @@ namespace Assignment2
                 isIntLength = int.TryParse(Console.ReadLine(), out length);
             }
             Console.Write("\n");
-            Console.Write("Please enter the width of the rectangle: ");
+            Console.Write("Please enter width of the rectangle (cm): ");
             bool isIntWidth = int.TryParse(Console.ReadLine(), out width);
             while (isIntWidth == false || width < 1)
             {
@@ -45,32 +42,36 @@ namespace Assignment2
                 switch (menuoption)
                 {
                     case 1:
-                        Console.WriteLine("Rectangle's Length is " + rect.GetLength());
+                        Console.WriteLine("Rectangle's Length is " + rect.GetLength() + " cm");
                         break;
                     case 2:
                         Console.WriteLine("Please enter new length of the rectangle: ");
-                        while (!int.TryParse(Console.ReadLine(), out length))
+                        isIntLength = int.TryParse(Console.ReadLine(), out length);
+                        while (isIntLength == false || length < 1)
                         {
-                            Console.WriteLine("Please enter a valid integer value!");
+                            Console.WriteLine("Please enter a valid integer value greater than zero!");
+                            isIntLength = int.TryParse(Console.ReadLine(), out length);
                         }
-                        Console.WriteLine("Rectangle's length is set to " + rect.SetLength(length));
+                        Console.WriteLine("Rectangle's length is set to " + rect.SetLength(length) + " cm");
                         break;
                     case 3:
-                        Console.WriteLine("Rectangle's Width is " + rect.GetWidth());
+                        Console.WriteLine("Rectangle's Width is " + rect.GetWidth() + " cm");
                         break;
                     case 4:
                         Console.WriteLine("Please enter new width of the rectangle: ");
-                        while (!int.TryParse(Console.ReadLine(), out width))
+                        isIntWidth = int.TryParse(Console.ReadLine(), out width);
+                        while (isIntWidth == false || width < 1)
                         {
-                            Console.WriteLine("Please enter a valid integer value!");
+                            Console.WriteLine("Please enter a valid integer value greater than zero!");
+                            isIntWidth = int.TryParse(Console.ReadLine(), out width);
                         }
-                        Console.WriteLine("Rectangle's length is set to " + rect.SetWidth(width));
+                        Console.WriteLine("Rectangle's width is set to " + rect.SetWidth(width) + " cm");
                         break;
                     case 5:
-                        Console.WriteLine("Rectangle's Perimeter is " + rect.GetPerimeter());
+                        Console.WriteLine("Rectangle's Perimeter is " + rect.GetPerimeter() + " cm");
                         break;
                     case 6:
-                        Console.WriteLine("Rectangle's Area is " + rect.GetArea());
+                        Console.WriteLine("Rectangle's Area is " + rect.GetArea() + " square cm");
                         break;
                     case 7:
                         return;

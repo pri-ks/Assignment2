@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Assignment2
+﻿namespace Assignment2
 {
     public class Rectangle
     {
@@ -28,7 +22,6 @@ namespace Assignment2
         {
             get { return width; }
         }
-
         public int GetLength()
         {
             return Length;
@@ -49,13 +42,11 @@ namespace Assignment2
         }
         public int GetPerimeter()
         {
-            int perimeter = 2 * (length + width);
-            return perimeter;
+            return (2 * (Length + Width));
         }
         public int GetArea()
         {
-            int area = length * width;
-            return area;
+            return (Length * Width);
         }
     }
 }
